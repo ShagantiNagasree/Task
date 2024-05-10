@@ -1,0 +1,122 @@
+<Html>  
+    <head>   
+    <title>  
+    Registration Page  
+    </title>  
+    </head>  
+    <body bgcolor="pink">  
+        <div class="main">
+            <marquee><h1>JOINING FORM</h1></marquee><hr>
+    <br>  
+    <br>  
+    <form>  
+      
+    <label> Firstname </label>         
+    <input type="text" name="firstname" size="15"/>
+    
+    <label> Lastname: </label>         
+    <input type="text" name="lastname" size="15"/> <br>
+      
+    <label>   
+   gym type :  
+    </label>   
+    <select>  
+    <option value="Course">Yoga</option>  
+    <option value="BCA">Deadlift</option>  
+    <option value="BBA">Squat</option>  
+    <option value="B.Tech">bench press</option>  
+    
+    </select>  
+      
+    <br>  
+    
+    <label>   
+    Gender :  
+    </label><br>  
+    <input type="radio" name="male"/> Male <br>  
+    <input type="radio" name="female"/> Female <br>  
+    <input type="radio" name="other"/> Other  
+    <br>  
+
+      
+    <label>   
+    Phone :  
+    </label>  
+    <input type="text" name="country code"  value="+91" size="2"/>   
+    <input type="text" name="phone" size="10"/> <br> <br>  
+    Address  
+    <br>  
+    <textarea cols="80" rows="5" value="address">  
+    </textarea>  
+    <br> <br>  
+    Email:  
+    <input type="email" id="email" name="email"/>     
+  
+    Password:  
+    <input type="Password" id="pass" name="pass"> <br>   
+    <br> <br>  
+   <button>
+    done
+   </button>
+   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+   <button>
+    cancel
+   </button>
+</div>
+    </body>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-image: -moz-linear-gradient(pink,white,pink);
+            font-family: cursive;
+            
+          }
+          .main{
+            padding:50px;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          input[type="text"],input[type="password"],textarea,input[type="email"]{
+              width:400px;
+              height: 40px;
+              background-color: #f59cba;
+              color:rgb(88, 6, 46);
+              box-shadow: 0 0 10px #8f2158;
+          }
+          
+          button{
+              width: 500PX;
+              height: 40px;
+              background-color: rgba(246, 94, 175, 0.863);
+              color:rgb(106, 9, 67)
+          }
+          
+          button:hover{
+             opacity: 0.8;
+          }
+         label{
+            font-size: 20px;
+            color:#8f2158;
+            font-family: cursive;
+         }
+        h1{
+            text-align: center;
+
+        }
+        button{
+            background-color: #fc9a11;
+            color: #8f2158;
+            border-radius: 5px;
+            padding:5px;
+            width: 100px;
+            
+        }
+        button:hover{
+            box-shadow: 0 0 10px #8f2158;
+            background-color: #8f2158;
+            color:white;
+        }
+    </style>  
+    </html>  
