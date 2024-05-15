@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="icon" href="logo2.png">
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .header{
+        width: 1550px;
+        height:150px;
+        background-color: rgba(12, 1, 8, 0.712);
+        color:white;
+        display:flex;
+        position:absolute;
+        top:0;
+    }
+    img{
+        height: 150px;
+        
+    }
+    select{
+        background-color: rgb(17, 2, 2);
+        color:white;
+        width: 150px;
+        height: 45px;
+        margin-left: 800px;
+        margin-top: 50px;
+        padding:5px;
+        border:1px solid white;
+        border-radius:5px;
+        font-size: 20px;
+    }
+    .main{
+        position:absolute;
+        top:250px;
+        left:400px;
+        width:850px;
+        height:300px;
+        color:white;
+        padding:20px;
+        background-color: rgba(17, 2, 2, 0.218);
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+      }
+    button{
+        background-color: red;
+        color:white;
+        font-weight: bold;
+        margin-left:50px;
+        padding:5px;
+        margin-top:50px ;
+        height:50px;
+        width:150px;
+       border:none;
+       border-radius: 5px;
+       font-size: 20px;
+    }
+    .bg{
+        position:relative;
+
+    }
+    .bg img{
+        width: 1550px;
+        height: 800px;
+        filter:blur(2px);
+    }
+    input{
+        width:450px;
+        height:45px;
+        background-color: rgba(0, 0, 0, 0.732);
+        color:white;
+        font-weight: bold;
+        border:none;
+        border-radius:5px;
+        font-size: 20px;
+    }
+    input:hover{
+        border:none;
+        box-shadow: 0 0 15px white;
+    }
+    button:hover{
+        border:none;
+        box-shadow: 0 0 15px white;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+ 
+</style>
+<body>
+    <div class="bg">
+        <img src="netflix.jpg" alt="https://www.reliancedigital.in/wp-content/uploads/2019/02/netflix_movies_cover.jpg" id="image" class="slides">
+        <img src="netflix1.jpg" alt="" id="image" class="slides">
+        <img src="netflix4.avif" alt="" id="image" class="slides">
+        <img src="netflix5.jpg" alt="" id="image" class="slides">
+    </div>
+   <div class="header">
+    <img src="logo1.png" alt="">
+    <select name="language" id="language" >&#127760; &nbsp;
+    <option value="English">&#127760; &nbsp;English</option>
+    <option value="Telugu">Telugu</option>
+    <option value="Hindi">Hindi</option>
+    <option value="French">French</option>
+    <option value="Tamil">Tamil</option>
+    <option value="Urdu">Urdu</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Korea">Korea</option>
+    <option value="Kanada">Kanada</option>
+</select>
+    <button><a href="netflix_login.html">sign In</a></button>
+   </div> 
+   <div class="main">
+    <h1>Unlimited movies ,&nbsp; TV shows and more</h1>
+    <h4>Watch anywhere. &nbsp; Cancel anytime.</h4>
+    <h4>Ready to watch? Ente your Email to create or Restart your membership.</h4>
+    <input type="text" placeholder="&nbsp; &nbsp;Enter your mail">
+    <button><a href="netflix_login.html">Get start &#129170;</a></button>
+   </div>
+
+
+</body>
+<script>
+    var index = 0;
+    change();
+
+    function change() {
+        var x = document.getElementsByClassName('slides');
+        for(var i = 0; i < x.length; i++) { 
+            x[i].style.display = "none"; 
+        }        
+        index++;
+        if(index > x.length) { 
+            index = 1; 
+        }
+        x[index - 1].style.display = "block";
+        setTimeout(change, 3000);}
+</script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX LOGIN</title>
+    <link rel="icon" href="logo2.png">
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .header{
+        width: 1550px;
+        height:150px;
+        background-color: rgba(12, 1, 8, 0.712);
+        color:white;
+        display:flex;
+        position:absolute;
+        top:0;
+    }
+    .header h1{
+        font-size: 50px;
+        color:red;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-left: 650px;
+        font-family: bold;
+    }
+    .main{
+        position:absolute;
+        top:200px;
+        left:550px;
+        width:450px;
+        height:400px;
+        color:white;
+        padding:20px;
+        background-color: rgb(17, 2, 2);
+         }
+ 
+    .bg{
+        position:relative;
+
+    }
+    .bg img{
+        width: 1550px;
+        height: 800px;
+        filter:blur(2px);
+    }
+    input{
+        width:450px;
+        height:45px;
+        background-color: rgba(255, 254, 254, 0.226);
+        color:white;
+        font-weight: bold;
+        border:none;
+        border-radius:2px;
+        
+    }
+    input[submit]{
+        width:450px;
+        height:45px;
+        background-color: rgba(245, 6, 6, 0.732);
+        color:white;
+        font-weight: bold;
+        border:none;
+        border-radius:5px;
+        font-size: 20px;
+    }
+    input:hover{
+        border:none;
+        box-shadow: 0 0 15px white;
+    }
+    button{
+        background-color: red;
+        color:white;
+        font-weight: bold;
+         padding:5px;
+        height:45px;
+        width:450px;
+       border:none;
+       border-radius: 2px;
+       font-size: 20px;
+    }
+   input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+   }
+   a{
+    text-decoration: none;
+   }
+   button:hover{
+    background-color: rgb(250, 186, 10);
+   
+    height: 50px;
+    box-shadow: 0 0 15px rgb(252, 233, 90);
+   }
+   a:hover{
+    color:gold;
+    font-size: 20px;
+   }
+</style>
+<body>
+    <div class="bg">
+        <img src="netflix.jpg" alt="https://www.reliancedigital.in/wp-content/uploads/2019/02/netflix_movies_cover.jpg" id="image" class="slides">
+        <img src="netflix1.jpg" alt="" id="image" class="slides">
+        <img src="netflix4.avif" alt="" id="image" class="slides">
+        <img src="netflix5.jpg" alt="" id="image" class="slides">
+    </div>
+   <div class="header">
+    <h1>NETFLIX</h1>
+   </div> 
+   <div class="main">
+   <input type="text" placeholder="Enter E-mail"><br><br><br>
+   <input type="password" placeholder="password"><br><br><br>
+  <button>Sing In</button><br><br>
+   <input type="checkbox">Remember &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="#">Need help?</a>
+   <h4>New to Netflix? , <a href="#">SingUp now</a></h4>
+   <h5>This is protected by Google reCAPTCHA to ensure you're not a bot <a href="#">Learn more</a></h5>   </div>
+
+
+</body>
+<script>
+    var index = 0;
+    change();
+
+    function change() {
+        var x = document.getElementsByClassName('slides');
+        for(var i = 0; i < x.length; i++) { 
+            x[i].style.display = "none"; 
+        }        
+        index++;
+        if(index > x.length) { 
+            index = 1; 
+        }
+        x[index - 1].style.display = "block";
+        setTimeout(change, 3000);}
+</script>
+</html>
